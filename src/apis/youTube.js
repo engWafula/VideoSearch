@@ -1,6 +1,5 @@
 import axios from "axios"
 
-const KEY = "AIzaSyAQgtxknYJW_UMSSOE2cYn19Hherb_JT9o";
 
 
 
@@ -9,7 +8,7 @@ export default axios.create({
     params:{
         part:"snippet",
         maxResults:10,
-        key:KEY,
+        key:process.env.REACT_APP_API_KEY,
         type: 'video',
     }
 
